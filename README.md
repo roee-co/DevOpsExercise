@@ -3,7 +3,7 @@
 ### **Home Assignment for Senior DevOps Engineer**
 
 #### **Objective**
-Demonstrate expertise in Infrastructure as Code (IaC), environment setup, containerization, testing, and observability by designing, implementing, and documenting a deployment solution for a mock application.
+Demonstrate production-ready expertise in Infrastructure as Code (IaC), environment setup, containerization, testing, and observability by designing, implementing, and documenting a deployment solution for a mock application.
 
 Please submit the exercise by creating a new GitHub repository with your code, and share it with me (`roee-co`).
 
@@ -17,9 +17,9 @@ Thank you and good luck!
    - A **VPC** with:
      - At least two public and private subnets across multiple availability zones.
      - Necessary route tables, internet gateway, and NAT gateway to enable connectivity.
-   - A **Lambda function** (packaged as a **Docker container**) deployed in the private subnets of the VPC and integrated with: (Mock implementation is fine)
-     - API Gateway (as a public REST endpoint).
-     - An SQS queue for message processing.
+   - A **Lambda function** (packaged as a **Docker container**) deployed in the private subnets of the VPC and triggered by API Gateway (as a public REST endpoint).
+     - Mock implementation for the Lambda REST endpoint is fine.
+     - Focus on having this setup wired correctly.
    - A MongoDB Atlas cluster (free tier or sandbox).
    - A CloudFront distribution to serve static assets from an S3 bucket.
    - A Cognito user pool with one test user.
@@ -48,7 +48,7 @@ Thank you and good luck!
 
 ---
 
-### **Part 3: Observability and Monitoring**
+### **Part 3: Observability and Monitoring** (OPTIONAL)
 1. **Task:**  
    - Set up observability, Include:
      - CloudWatch logs and metrics for the Lambda function, with monitoring for:
@@ -67,7 +67,7 @@ Thank you and good luck!
 
 ### **Evaluation Criteria**
 - **Code Quality:** Clean, modular, and follows best practices.
+- **Production-Ready** Code should be organized and ready for production deployment.
 - **Documentation:** Clear and easy-to-follow instructions.
 - **Completeness:** All deliverables are provided and functional.
 - **Problem-Solving:** Creativity and effectiveness in meeting the requirements.
-- **Integration:** Effective integration of observability as a core component of the solution.
